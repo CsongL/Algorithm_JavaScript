@@ -29,7 +29,7 @@
     }
     if(fast ==null){
         head = slow.next;
-        return head
+        return head;
     }
     fast = fast.next;
     slow = slow.next;
