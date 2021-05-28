@@ -8,7 +8,7 @@
         return false;
     }
     let index =0;
-    let n = nums.length
+    let n = nums.length;
     for(; index<n;){
         if(nums[index] > nums[index+1]){
             break;

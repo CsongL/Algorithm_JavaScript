@@ -1,3 +1,9 @@
+/**
+ * Time: 2021/05/26
+ * 
+ * @param {} s 
+ * @returns 
+ */
 var reverseParentheses = function(s) {
     let result = s;
     let leftIdnex= s.lastIndexOf('(');
