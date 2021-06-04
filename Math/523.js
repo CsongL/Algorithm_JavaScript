@@ -11,10 +11,10 @@
  * @return {boolean}
  */
  var checkSubarraySum = function(nums, k) {
-    let map = new Map([[0, -1]])
+    let map = new Map([[0, -1]]);
     let rem = 0;
     for(let i =0; i<nums.length; i++){
-        rem = (rem+nums[i])%k;
+        rem = (rem+nums[i])%k; // 为什么保存的是前缀和对k取模的余数，这就用到了同余定理，如果两个数对k取模后得到的余数相同，那么这两个数的差值一定是这个k的倍数
         if(map.has(rem)){
             let pos = map.get(rem);
             if(i-pos >= 2) return true;
