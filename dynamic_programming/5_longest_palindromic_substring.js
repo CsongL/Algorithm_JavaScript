@@ -20,6 +20,6 @@ var longestPalindrome = function(s) {
          ++right;
      }
      return right - left -1;
- }
+ };
  
 console.log(longestPalindrome("aacaabdkaacaa"));
