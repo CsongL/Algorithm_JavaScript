@@ -14,7 +14,7 @@
             let third = [first[0], end];
             intervals.splice(i, 2, third);
         }else{
-            i++
+            i++;
         }
     }
     return intervals;
