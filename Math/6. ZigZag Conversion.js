@@ -14,7 +14,7 @@ function convert(s, numRows) {
         let j = i;
         let str = '';
         while(j < m) {
-            str += s[j]
+            str += s[j];
             if( i > 0 && i < numRows - 1) {
                 let index = Math.floor(j / count);
                 let secondIndex = index * count + count - i;
