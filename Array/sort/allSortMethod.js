@@ -90,7 +90,7 @@ function merge(left, right) {
     }
 
     return arr.concat(left, sright);
-}s
+}
 
 function mergeSort(arr) {
     if(arr.length <=1) return arr;
