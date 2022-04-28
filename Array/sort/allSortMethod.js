@@ -76,7 +76,7 @@ function quickSort(arr, left, right) {
     return arr;
 }
 
-console.log(quickSort([1,4,3,2], 0, 3));
+console.log('quickSort', quickSort([1,4,3,2], 0, 3));
 
 // 归并排序 先将数组不断划分，然后在合并起来
 function merge(left, right) {
@@ -89,7 +89,7 @@ function merge(left, right) {
         }
     }
 
-    return arr.concat(left, sright);
+    return arr.concat(left, right);
 }
 
 function mergeSort(arr) {
