@@ -1,7 +1,7 @@
 // 冒泡排序，每次遍历时，两两比较，将这次最大值或最小值放到最后
 function bubbleSort (array) {
     for(let i = 0; i < array.length; i++){
-        for(let j = i ; j < array.length -1; j++) {
+        for(let j = 0 ; j < array.length -1 - i; j++) {
             if(array[j+1] < array[j]) {
                 [array[j+1], array[j]] = [array[j], array[j+1]];
             }
